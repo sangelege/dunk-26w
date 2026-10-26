@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0f1115">
+<title>扣篮协议 · 26 周</title>
+<meta name="description" content="170cm / 68kg 六个月扣篮执行方案：T1–T4 完成标准、26 周分块、每周模板、测试门槛、技术模块与红线。">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='42' fill='none' stroke='%23ff6b1a' stroke-width='8'/><path d='M8 50h84M50 8v84' stroke='%23ff6b1a' stroke-width='4'/></svg>">
+</head>
+<body>
+
+<header class="hero">
+  <div class="court-lines" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <div class="kicker">170cm · 68kg · 26 周</div>
+    <h1>扣篮<span>协议</span></h1>
+    <p class="lede">目标已锁定：<strong>26 周内完成 T1 扣篮</strong>，并把标准筐的差距压到 5–8cm。</p>
+
+    <div class="hero-grid">
+      <div class="stat">
+        <div class="stat-label">现在·助跑摸高</div>
+        <div class="stat-num">2.87<span>m</span></div>
+        <div class="stat-sub">助跑垂直 75cm</div>
+      </div>
+      <div class="arrow" aria-hidden="true">→</div>
+      <div class="stat target">
+        <div class="stat-label">T1 目标·2.90m 筐</div>
+        <div class="stat-num">2.98<span>m</span></div>
+        <div class="stat-sub">差 11cm</div>
+      </div>
+      <div class="stat ghost">
+        <div class="stat-label">T2 冲刺·2.95m 筐</div>
+        <div class="stat-num">3.07<span>m</span></div>
+        <div class="stat-sub">差 20cm</div>
+      </div>
+    </div>
+
+    <div class="ring-wrap">
+      <div class="ring" id="ring"><span id="ringText">0<small>%</small></span></div>
+      <div class="ring-meta">
+        <div class="ring-title">26 周进度</div>
+        <div class="ring-sub" id="ringSub">还没有开始记录</div>
+      </div>
+    </div>
+
+    <div class="start-bar">
+      <label for="startDate">开始日期</label>
+      <input type="date" id="startDate">
+      <span class="week-badge" id="weekBadge">第 1 周</span>
+      <button class="btn ghost-btn" id="resetBtn" type="button">重置记录</button>
+    </div>
+  </div>
+</header>
+
+<nav class="nav" id="nav">
+  <a href="#tiers">完成标准</a>
+  <a href="#levers">每一厘米</a>
+  <a href="#blocks">26 周</a>
+  <a href="#weekly">周表</a>
+  <a href="#tests">测试</a>
+  <a href="#skill">技术</a>
+  <a href="#rules">红线</a>
+</nav>
+
+<main>
+
+<section id="tiers" class="sec">
+  <h2><span class="idx">01</span>先把“完成扣篮”定义清楚</h2>
+  <p class="note">任选其一即为达成。主攻 T1，冲 T2；T4 留给第二年。</p>
+  <div class="cards four">
+    <article class="card tier t1">
+      <div class="tier-h">T1 · 保底</div>
+      <div class="tier-cond">2.90m 筐 + 5 号球<br>双手扣 / 前臂托球送入</div>
+      <div class="tier-need">需摸高 <strong>2.98m</strong></div>
+      <div class="tier-gap">+11cm</div>
+      <div class="tier-prob"><i style="--p:80%"></i><span>75–85%</span></div>
+    </article>
+    <article class="card tier t2">
+      <div class="tier-h">T2 · 主目标</div>
+      <div class="tier-cond">2.95m 筐 + 6 号球<br>双手扣 / 前臂托</div>
+      <div class="tier-need">需摸高 <strong>3.07m</strong></div>
+      <div class="tier-gap">+20cm</div>
+      <div class="tier-prob"><i style="--p:45%"></i><span>40–50%</span></div>
+    </article>
+    <article class="card tier t3">
+      <div class="tier-h">T3 · 拉伸</div>
+      <div class="tier-cond">3.05m 标准筐 + 6 号球<br>打板自抛 + 双手</div>
+      <div class="tier-need">需摸高 <strong>3.17–3.20m</strong></div>
+      <div class="tier-gap">+30–33cm</div>
+      <div class="tier-prob"><i style="--p:12%"></i><span>10–15%</span></div>
+    </article>
+    <article class="card tier t4">
+      <div class="tier-h">T4 · 第二年</div>
+      <div class="tier-cond">3.05m 标准筐 + 7 号球</div>
+      <div class="tier-need">需摸高 <strong>3.20–3.25m</strong></div>
+      <div class="tier-gap">+33–38cm</div>
+      <div class="tier-prob"><i style="--p:2%"></i><span>0–3%</span></div>
+    </article>
+  </div>
+  <div class="callout">
+    <strong>T4 为什么几乎为零，是算术：</strong>现在助跑垂直 75cm，标准筐标准球要 108–113cm，等于 26 周涨 33–38cm。
+    有训练基础人群 26 周典型涨幅 4–8cm，高反应者 12–15cm。这条差距是适应速率的 3 倍以上，补剂、周期、加练都跨不过去。
+  </div>
+</section>
+
+<section id="levers" class="sec">
+  <h2><span class="idx">02</span>这半年能挤出来的每一厘米</h2>
+  <p class="note">26 周上限 <strong>+15–18cm → 摸高 3.02–3.05</strong>。八个杠杆同时开工。</p>
+  <div class="table-wrap">
+    <table class="data-table">
+      <thead><tr><th>来源</th><th>可回收</th><th>怎么做</th><th>兑现窗口</th></tr></thead>
+      <tbody>
+        <tr><td><b>助跑技术</b></td><td class="gain">+4–8cm</td><td>倒数第二步大而低、最后一步快而短、摆臂同步、胸口压过膝盖</td><td>W3–W8</td></tr>
+        <tr><td><b>改单脚起跳</b></td><td class="gain">+3–9cm</td><td>双脚习惯、助跑只多 7cm；改左脚起跳右手扣，W4 前测两种选高的</td><td>W6–W14</td></tr>
+        <tr><td>体脂降 2–3kg</td><td class="gain">+2–4cm</td><td>相对功率提升，每周 0.4kg，蛋白与深蹲不掉</td><td>W8–W16</td></tr>
+        <tr><td>踝—跟腱刚度</td><td class="gain">+2–4cm</td><td>pogo 家族 + 提踵 + 每日微剂量 3×10 秒</td><td>W5–W12</td></tr>
+        <tr><td>发力率 / 弹道</td><td class="gain">+2–4cm</td><td>弹力带助力跳、六角杠跳、坐姿跳、药球上抛</td><td>W10–W18</td></tr>
+        <tr><td>最大力量补丁</td><td class="gain">+2–4cm</td><td>六角杠 &lt;145kg 时：每周 2 组×2–3 次 @88–92%</td><td>W6–W14</td></tr>
+        <tr><td>球与筐处理</td><td class="gain">转化器</td><td>5 号→6 号球、前臂托球、打板自抛</td><td>全程</td></tr>
+        <tr><td>不减损</td><td class="gain">保住 3–5cm</td><td>跳跃预算 ≤120/周、比赛前一天减半、睡眠 8h</td><td>全程</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="blocks" class="sec">
+  <h2><span class="idx">03</span>26 周分块 · 边练边勾</h2>
+  <p class="note">勾选记录存在本机浏览器里。每 4 周实测一次，按门槛改方案。</p>
+  <div class="legend">
+    <span><i class="dot test"></i>测试周</span>
+    <span><i class="dot peak"></i>峰值 / 挑战</span>
+    <span id="blockProgress">已完成 0 / 26 周</span>
+  </div>
+  <div class="weeks" id="weeks"></div>
+</section>
+
+<section id="weekly" class="sec">
+  <h2><span class="idx">04</span>每周模板 · 90 分钟封顶</h2>
+  <div class="week-grid">
+    <div class="day"><div class="day-h">周一</div><div class="day-b"><b>助跑技术 10′</b> → D1 单侧 Power → 推 → 辅助 → 核心</div><div class="day-t">88′</div></div>
+    <div class="day"><div class="day-h">周二</div><div class="day-b">D2 双侧 Power → 深蹲 / 六角杠 → 辅助 → 核心</div><div class="day-t">82′</div></div>
+    <div class="day ball"><div class="day-h">周三</div><div class="day-b">篮球技术课（跳跃 &lt;20 次）→ 髌腱等长 8′ → 低筐球感 15′</div><div class="day-t">75′</div></div>
+    <div class="day"><div class="day-h">周四</div><div class="day-b"><b>助跑技术 10′</b> → D3 单侧 Power → 拉 → 核心</div><div class="day-t">85′</div></div>
+    <div class="day"><div class="day-h">周五</div><div class="day-b">D4 双侧 Power → 六角杠 + 重单组 2×2–3 @88–92% → 辅助</div><div class="day-t">85′</div></div>
+    <div class="day game"><div class="day-h">周六</div><div class="day-b">比赛 / 实战（赛前不碰下肢，Plyo 减半）</div><div class="day-t">90–120′</div></div>
+    <div class="day rest"><div class="day-h">周日</div><div class="day-b">休 或 25′ 微剂量：pogo 3×10 秒 + 提踵 + 球感</div><div class="day-t">0–25′</div></div>
+  </div>
+  <div class="three-rules">
+    <div><b>跳跃预算</b>每周全力起跳 ≤120 次（计划 60–80 + 实战 40–80）。超了砍 D3 的 Power 块。</div>
+    <div><b>游戏日</b>比赛前一日 Plyo 组数砍 50%，力量照做；赛后 24h 不碰 depth drop 与北欧。</div>
+    <div><b>睡眠</b>&lt;6.5h 连续 3 天：当天只做技术 + 力量，砍 plyo。</div>
+  </div>
+</section>
+
+<section id="tests" class="sec">
+  <h2><span class="idx">05</span>测试与门槛</h2>
+  <p class="note">粉笔摸板法：<strong>绝对摸高 = 2.90m + 板上距离</strong>。同一块板、同一双鞋、同一时间段。</p>
+  <div class="tests" id="testsBox"></div>
+
+  <h3 class="sub-h">Go / No-Go</h3>
+  <div class="table-wrap">
+    <table class="data-table">
+      <thead><tr><th>节点</th><th>达标线</th><th>未达标怎么办</th></tr></thead>
+      <tbody>
+        <tr><td>W5</td><td>≥2.90（+3cm）</td><td>查等长是否真力竭、睡眠、跳跃预算；三项都正常 → 球减到 2 次</td></tr>
+        <tr><td>W9</td><td>≥2.93（+6cm）</td><td>球减到 2 次；重单组升每周 2 次；体脂 &gt;16% 开始减脂</td></tr>
+        <tr><td>W13</td><td>≥2.95（+8cm）</td><td>锁 T1（2.90m + 5 号球），剩余 13 周全投助跑技术与单脚专项</td></tr>
+        <tr><td>W17</td><td>≥2.98（+11cm）</td><td>挑战日提前到 W22，用 T1 标准先完成一次</td></tr>
+        <tr><td>W21</td><td>≥3.00（+13cm）</td><td>锁 T2，最后 5 周只做低量高质 + 减量</td></tr>
+        <tr><td>W26</td><td>挑战日</td><td>按 T1 → T2 顺序尝试，T1 成功即完成</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="sub-h">本周就要办的 5 件事</h3>
+  <ol class="checklist">
+    <li>量站摸 + 臂展 + 手长（靠墙三次取高）。<b>若是 2.20m 而不是 2.12m，所有门槛下调 8cm。</b></li>
+    <li>测六角杠 1RM。&lt;145kg → 每周重单组升为第一优先；≥156kg（2.3×）→ 力量只维持。</li>
+    <li>拿卷尺标定 3 个球场，锁 2 个 2.90–2.95m 的筐 + 1 个标准筐。挑战日地点现在定死。</li>
+    <li>买 5 号 + 6 号球、镁粉/松香。</li>
+    <li>W0 全套基线：原地 / 双脚助跑 / 单脚助跑 / 单腿助跑 / 立定跳远 / 30m / 体重体脂。</li>
+  </ol>
+</section>
+
+<section id="skill" class="sec">
+  <h2><span class="idx">06</span>技术模块 · 每周 30–40 分钟</h2>
+  <p class="note">拆在周一 / 周三 / 周四。每次录 2 条 120fps 侧后方视频。</p>
+  <div class="cards four">
+    <article class="card skill"><div class="skill-tag">A · 助跑节奏</div><p>无球 3 步 ×3–4。倒数第二步<b>大而低</b>，最后一步<b>快而短</b>（block foot），胸口压过前脚膝盖。</p></article>
+    <article class="card skill"><div class="skill-tag">B · 摆臂</div><p>一步/原地起跳 ×3。双臂后摆到髋后 → 同步前上摆到耳侧，贡献 10–15%。</p></article>
+    <article class="card skill"><div class="skill-tag">C · 目标触击</div><p>胶带/网球 ×3–5。目标 = 当前最高点 +2cm，每周上移；动作变形立即停。</p></article>
+    <article class="card skill"><div class="skill-tag">D · 球处理</div><p>5 号→6 号球 ×5–8。前臂托球、双手夹球、打板自抛；从“送过筐沿”到“扣进”。</p></article>
+  </div>
+
+  <h3 class="sub-h">抓不住球的四种处理</h3>
+  <div class="table-wrap">
+    <table class="data-table">
+      <thead><tr><th>方法</th><th>做法</th><th>难度</th></tr></thead>
+      <tbody>
+        <tr><td>双手扣</td><td>球夹在两掌之间，到最高点再往下压——最稳，但更吃高度</td><td>低</td></tr>
+        <tr><td>前臂托球</td><td>球贴小臂内侧、手掌朝内，起跳中保持，顶点翻腕送入</td><td>中</td></tr>
+        <tr><td>打板自抛</td><td>自己抛板、跟进接球扣——练习成功率最高</td><td>中</td></tr>
+        <tr><td>镁粉 / 松香</td><td>临时增加摩擦，能“半抓”住球</td><td>低</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="rules" class="sec">
+  <h2><span class="idx">07</span>红线与挑战日</h2>
+  <div class="table-wrap">
+    <table class="data-table">
+      <thead><tr><th style="width:26%">信号</th><th>处理</th></tr></thead>
+      <tbody>
+        <tr><td>髌骨下极按压痛 &gt;3/10 或晨僵 &gt;10 分钟</td><td>本周 plyo 砍 50%，只做等长 + 力量；两周不缓解去查髌腱</td></tr>
+        <tr><td>摸高连续 2 周下降 &gt;5%</td><td>立即提前减载一周（用 W5 模板）</td></tr>
+        <tr><td>单侧膝 / 踝疼痛</td><td>停 depth drop 与单腿跳，改双腿 + 等长</td></tr>
+        <tr><td>睡眠 &lt;6.5h 连续 3 天</td><td>砍 plyo，保留技术与力量</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h3 class="sub-h">挑战日（W26 周六）流程</h3>
+  <ol class="steps">
+    <li>前一晚睡 8 小时；W25–26 已减量，不安排任何下肢训练。</li>
+    <li>到场：动态热身 12′ + 3 次渐进助跑（70% → 85% → 95%）。</li>
+    <li>顺序：双手扣 5 号球（2–3 次）→ 前臂托 6 号（2–3 次）→ 打板自抛（2–3 次）→ 若 T1 已成，转 T2 场地。</li>
+    <li>每个高度最多 6 次全力，间隔 60–90 秒；失败 3 次就换方案（换球 / 换起跳脚 / 换抛球角度），别硬砸。</li>
+    <li>全程录像留档。<b>这就是“完成”的证据。</b></li>
+  </ol>
+
+  <h3 class="sub-h">W13 没过 2.95 的保险方案</h3>
+  <ul class="bullets">
+    <li><b>降级锁 T1</b>：2.90m 筐 + 5 号球，13 周的摸高已到 T1 需求的 97%，剩下只练“把球送进去”，命中率会很高。</li>
+    <li><b>改单脚起跳</b>：双脚改单脚常带来 3–9cm，是 13 周里唯一还能捡的大块。</li>
+    <li><b>减 2kg 脂肪</b>：相对功率 +3–5%，等于白送 2–3cm。</li>
+    <li><b>延长到 40 周做 T2</b>：概率升到 70% 以上，时间换高度的正常做法。</li>
+  </ul>
+</section>
+
+<section class="sec muted-sec">
+  <h2><span class="idx">08</span>底层：EVA 计划质量</h2>
+  <p class="note">骨架来自《精英垂直弹跳学院》16 周 4 阶段，质量评估结论保持不变。</p>
+  <div class="table-wrap">
+    <table class="data-table">
+      <thead><tr><th>维度</th><th>分</th><th>依据</th></tr></thead>
+      <tbody>
+        <tr><td>周期化结构</td><td>9.0</td><td>激活 / 吸收 / 推进 / 峰值对应累积→转化→实现，W5/W9/W13 减载</td></tr>
+        <tr><td>强度递进</td><td>8.5</td><td>77→80→82→85% 波浪；峰值期 50%+85% / 40%+95%</td></tr>
+        <tr><td>动作进阶</td><td>9.0</td><td>pogo → 直线 → 单腿；等长 → 振荡 → 6 秒离心 → 助力 → 反应式</td></tr>
+        <tr><td>理论证据</td><td>8.0</td><td>20 篇参考文献；但“指数级提升”“90 天 11 英寸”是夸大</td></tr>
+        <tr><td>个体化</td><td>5.5</td><td>固定百分比，无 RPE，无“打 3 次球”的减法规则</td></tr>
+        <tr><td>扣篮专项迁移</td><td>4.5</td><td>零助跑教学、零摆臂、零球筐处理、零冲刺</td></tr>
+        <tr><td>恢复管理</td><td>6.5</td><td>有减载，但默认你只练这 4 天</td></tr>
+        <tr class="total"><td>综合</td><td>7.8</td><td>通用弹跳模板优等；作为“170cm 扣篮执行方案”只有 6.5，缺口靠本页补齐</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="foot-in">
+    <div><b>扣篮协议 · 26 周</b> · 目标 T1 2.98m / T2 3.07m</div>
+    <div class="foot-note">数据只存在你这台设备的浏览器里（localStorage），不上传、不同步。换设备需重新填写。</div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
